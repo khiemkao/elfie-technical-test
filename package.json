@@ -1,0 +1,24 @@
+{
+  "name": "elfie-technical-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "appium:start": "npx appium server --allow-cors --relaxed-security --base-path /wd/hub",
+    "test": "wdio run ./wdio.conf.ts",
+    "allure:open": "npx allure serve"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "@wdio/allure-reporter": "^9.2.14",
+    "@wdio/cli": "^9.4.1",
+    "@wdio/local-runner": "^9.4.1",
+    "@wdio/mocha-framework": "^9.2.8",
+    "allure-commandline": "^2.32.0",
+    "appium": "^2.12.2",
+    "appium-chromium-driver": "^1.4.4",
+    "appium-uiautomator2-driver": "^3.9.1",
+    "csv": "^6.3.11",
+    "dotenv": "^16.4.5"
+  }
+}
